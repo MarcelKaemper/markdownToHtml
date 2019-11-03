@@ -7,6 +7,7 @@ int main() {
 	
 	Parser p;
 
+<<<<<<< HEAD
 	std::cout << "Name of input file: ";
 	std::string inputFile;
 	std::cin >> inputFile;
@@ -16,6 +17,9 @@ int main() {
 	std::cin >> outputFile;
 
 	std::fstream f(inputFile);
+=======
+	std::fstream f("test.md");
+>>>>>>> beeeaa4659c670d45e60f35662e93c0b55973cce
 	f << "    #Tes t\n    ####  Sec ond Line";
 	// Reset cursor
 	f.seekg(0);
@@ -46,6 +50,10 @@ int main() {
 		std::cout << p.parseLine(line);
 		std::cout << std::endl;
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> beeeaa4659c670d45e60f35662e93c0b55973cce
 	f.close();
 
 	return 0;
